@@ -4,10 +4,12 @@ table 50101 EmployeeSetupTable
 
     fields
     {
+        //Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.
         field(1; IntegerType; Integer)
         {
             DataClassification = ToBeClassified;
         }
+        //Stores very large whole numbers that range from -9,223,372,036,854,775,807 to 9,223,372,036,854,775,807.
         field(2; BigIntegerType; BigInteger)
         {
             DataClassification = ToBeClassified;
@@ -59,7 +61,7 @@ table 50101 EmployeeSetupTable
         myInt: Integer;
         myDec: Decimal;
         myBigInt: BigInteger;
-        myOption: Option One, Two, Three;
+        myOption: Option One,Two,Three;
         myBool: Boolean;
         myText: Text[100];
 
