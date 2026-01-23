@@ -46,6 +46,66 @@ page 50100 EmployeePage
                     Message('Processing Action 2 Triggered');
                 end;
             }
+            action(CallEmployeeOprationsCodeunit)
+            {
+                // Promoted = true;
+                trigger OnAction()
+                var
+                    EmployeeCodeunit: Codeunit EmployeeOperations;
+                begin
+                    EmployeeCodeunit.Run();
+                end;
+            }
+            action(CallEmployeeOprationsCodeunitInternalProcedure)
+            {
+                // Promoted = true;
+                trigger OnAction()
+                var
+                    EmployeeCodeunit: Codeunit EmployeeOperations;
+                begin
+                    // EmployeeCodeunit.Run();
+                    EmployeeCodeunit.SampleInternalProcedure();
+                end;
+            }
+            action(RetriveRecord)
+            {
+
+                trigger OnAction()
+                var
+                    EmployeeOperations: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOperations.RetriveRecordsFromEmployeeTable();
+                end;
+            }
+            action(RetriveRecordByFilter)
+            {
+
+                trigger OnAction()
+                var
+                    EmployeeOperations: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOperations.RetriveRecordsByFilterFromEmployeeTable();
+                end;
+            }
+            action(DoRecordOperations)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOperations: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOperations.DeleteAllAgeswhereIDGT50();
+                end;
+            }
+            action(CallVariables)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOperations: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOperations.UseVariable();
+                end;
+            }
+
         }
         area(Creation)
         {
@@ -108,6 +168,11 @@ page 50100 EmployeePage
     begin
         // Message('Closing Employee Page, getting triggered from OnQueryClosePage');
         // exit(true);
+    end;
+
+    protected procedure SampleProtectedProcedure()
+    begin
+        Message('Sample Protected Procedure in Employee Page');
     end;
 
     var

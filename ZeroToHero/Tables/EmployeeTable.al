@@ -57,4 +57,6 @@ table 50100 EmployeeTable
         // Message('Renaming the record %1', Rec.EmployeeId);
     end;
 
+    protected var
+        number: Integer;
 }
