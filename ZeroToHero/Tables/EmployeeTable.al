@@ -19,6 +19,38 @@ table 50100 EmployeeTable
             DataClassification = ToBeClassified;
 
         }
+        field(4; EmployeeeAccountTypeOption; Option)
+        {
+            DataClassification = ToBeClassified;
+            OptionMembers = "Full-Time","Part-Time","Contractor","Intern";
+            trigger OnValidate()
+            var
+                EmployeeOps: Codeunit EmployeeOperations;
+            begin
+                if EmployeeeAccountTypeOption = EmployeeeAccountTypeOption::Contractor then
+                    EmployeeOps.ShowEmployeeAccountTypeContractor(EmployeeeAccountTypeOption);
+                if EmployeeeAccountTypeOption = EmployeeeAccountTypeOption::"Part-Time" then
+                    EmployeeOps.ShowEmployeeAccountTypeParttime(EmployeeeAccountTypeOption);
+                if EmployeeeAccountTypeOption = EmployeeeAccountTypeOption::"Full-Time" then
+                    EmployeeOps.ShowEmployeeAccountTypeFullTime(EmployeeeAccountTypeOption);
+            end;
+
+        }
+        field(5; EmployeeeAccountTypeEnum; Enum EmployeeeAccountTypeEnum)
+        {
+            DataClassification = ToBeClassified;
+            trigger OnValidate()
+            var
+                EmployeeOps: Codeunit EmployeeOperations;
+            begin
+                if EmployeeeAccountTypeEnum = EmployeeeAccountTypeEnum::Contractor then
+                    EmployeeOps.ShowEmployeeAccountTypeEnumContractor(EmployeeeAccountTypeEnum);
+                if EmployeeeAccountTypeEnum = EmployeeeAccountTypeEnum::PartTime then
+                    EmployeeOps.ShowEmployeeAccountTypeEnumPartTime(EmployeeeAccountTypeEnum);
+                if EmployeeeAccountTypeEnum = EmployeeeAccountTypeEnum::FullTime then
+                    EmployeeOps.ShowEmployeeAccountTypeEnumFullTime(EmployeeeAccountTypeEnum);
+            end;
+        }
     }
 
     keys

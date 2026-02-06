@@ -99,6 +99,92 @@ page 50101 EmployeeSetupPage
     {
         area(Processing)
         {
+            action(Collections)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOps: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOps.DictionaryVariable();
+                end;
+            }
+            action(CallConditionalStatements)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOps: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOps.ConditionalStatements();
+                end;
+            }
+            action(LoopControlStatements)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOps: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOps.LoopingStatements();
+                end;
+            }
+            action(BuiltInFunctions)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOps: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOps.BuiltInFunctions();
+                end;
+            }
+            action(StringFunctions)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOps: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOps.StringFunctions();
+                end;
+            }
+            action(DateFunctions)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOps: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOps.DateFunctions();
+                end;
+            }
+            action(NumbericFunctions)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOps: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOps.NumericFunctions2();
+                end;
+            }
+            action(VariableFunctions)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOps: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOps.VariableFunctions();
+                end;
+            }
+            action(PassParameters)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOps: Codeunit EmployeeOperations;
+                    Number: Integer;
+                    EmployeeRec: Record EmployeeTable;
+                begin
+                    EmployeeRec.Get(10);
+                    Message('The value of the Name  before passing to Codeunit: %1', EmployeeRec.EmployeeName);
+                    EmployeeOps.PassParameters(EmployeeRec);
+                    Message('The value of the Name  after passing to Codeunit: %1', EmployeeRec.EmployeeName);
+                end;
+            }
         }
     }
     var

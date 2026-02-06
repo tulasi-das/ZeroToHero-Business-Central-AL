@@ -23,6 +23,14 @@ page 50100 EmployeePage
                 {
 
                 }
+                field(EmployeeeAccountTypeOption; Rec.EmployeeeAccountTypeOption)
+                {
+
+                }
+                field(EmployeeeAccountTypeEnum; Rec.EmployeeeAccountTypeEnum)
+                {
+
+                }
             }
         }
     }
