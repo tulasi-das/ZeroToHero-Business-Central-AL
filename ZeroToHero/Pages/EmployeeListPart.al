@@ -1,7 +1,6 @@
 page 50110 EmployeeListPart
 {
     PageType = CardPart;
-    ApplicationArea = All;
     SourceTable = EmployeeTable;
     Caption = 'Employees';
 

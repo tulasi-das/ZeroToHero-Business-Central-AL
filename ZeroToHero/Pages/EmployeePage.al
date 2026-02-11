@@ -5,7 +5,7 @@ page 50100 EmployeePage
     UsageCategory = Lists;
     SourceTable = EmployeeTable;
     CardPageId = EmployeeCardPage;
-    Caption = 'Employees';
+    Caption = 'Employees List';
 
     layout
     {

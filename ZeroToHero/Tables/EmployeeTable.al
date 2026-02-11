@@ -123,11 +123,11 @@ table 50100 EmployeeTable
         {
             DataClassification = ToBeClassified;
         }
-        field(24; DepartmentCode; Code[20])
+        field(24; DepartmentCode; Enum DepartmentEnum)
         {
             DataClassification = ToBeClassified;
         }
-        field(25; DesignationCode; Code[20])
+        field(25; DesignationId; Integer)
         {
             DataClassification = ToBeClassified;
         }

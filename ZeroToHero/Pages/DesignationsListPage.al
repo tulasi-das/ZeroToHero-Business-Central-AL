@@ -2,7 +2,7 @@ page 50107 DesignationsListPage
 {
     PageType = List;
     ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     SourceTable = Designations;
     Caption = 'Designation List';
 
@@ -33,21 +33,12 @@ page 50107 DesignationsListPage
                     Caption = 'Available Positions';
                     Visible = not IsOpenedFromEmpReg;
                 }
-            }
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                Caption = 'New Action';
-                trigger OnAction()
-                begin
-
-                end;
+                field(SalaryThreshold; Rec.SalaryThreshold)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Salary Threshold';
+                    Visible = not IsOpenedFromEmpReg;
+                }
             }
         }
     }

@@ -1,7 +1,6 @@
 page 50103 ContactQuickViewFactBox
 {
     PageType = CardPart;
-    ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = EmployeeTable;
     Caption = 'Contact Quick Information';
@@ -28,21 +27,6 @@ page 50103 ContactQuickViewFactBox
                     ApplicationArea = All;
                     Caption = 'Address';
                 }
-            }
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                Caption = 'New Action';
-                trigger OnAction()
-                begin
-
-                end;
             }
         }
     }

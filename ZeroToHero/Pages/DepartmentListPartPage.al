@@ -1,7 +1,6 @@
 page 50111 DepartmentListPart
 {
     PageType = CardPart;
-    ApplicationArea = All;
     SourceTable = DepartmentsTable;
     Caption = 'Departments';
 

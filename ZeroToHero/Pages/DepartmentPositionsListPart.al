@@ -1,8 +1,6 @@
 page 50106 DepartmentPostitions
 {
     PageType = ListPart;
-    ApplicationArea = All;
-    UsageCategory = Administration;
     SourceTable = DepartmentPositionsTable;
     Caption = 'Department Positions';
 
@@ -32,21 +30,6 @@ page 50106 DepartmentPostitions
                     ApplicationArea = All;
                     Caption = 'Available Positions';
                 }
-            }
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                Caption = 'New Action';
-                trigger OnAction()
-                begin
-
-                end;
             }
         }
     }

@@ -2,10 +2,11 @@ page 50112 EmployeeRegistrationsList
 {
     PageType = List;
     ApplicationArea = All;
-    UsageCategory = Administration;
+    UsageCategory = Lists;
     SourceTable = EmployeeRegistrations;
     Caption = 'Employee Registration List';
     CardPageId = EmployeeRegistrationsCardPage;
+    Editable = false;
 
     layout
     {
@@ -28,21 +29,6 @@ page 50112 EmployeeRegistrationsList
                     ApplicationArea = All;
                     Caption = 'Registration Status';
                 }
-            }
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                Caption = 'New Action';
-                trigger OnAction()
-                begin
-
-                end;
             }
         }
     }

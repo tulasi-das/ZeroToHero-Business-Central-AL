@@ -5,7 +5,7 @@ enum 50105 EmployeeRegistration
     value(0; Draft)
     {
     }
-    value(1; Rejected)
+    value(1; Submitted)
     {
     }
 }

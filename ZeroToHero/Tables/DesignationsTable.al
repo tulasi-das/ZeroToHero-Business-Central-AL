@@ -35,6 +35,11 @@ table 50104 Designations
             DataClassification = ToBeClassified;
             Caption = 'Available Positions';
         }
+        field(6; SalaryThreshold; Decimal)
+        {
+            DataClassification = ToBeClassified;
+            Caption = 'Salary Threshold';
+        }
     }
 
     keys

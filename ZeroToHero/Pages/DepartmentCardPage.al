@@ -36,21 +36,6 @@ page 50105 DepartmentCardPage
         }
     }
 
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                Caption = 'New Action';
-                trigger OnAction()
-                begin
-
-                end;
-            }
-        }
-    }
-
     var
         myInt: Integer;
 }

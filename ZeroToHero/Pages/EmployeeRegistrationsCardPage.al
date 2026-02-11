@@ -1,7 +1,6 @@
 page 50114 EmployeeRegistrationsCardPage
 {
     PageType = Card;
-    UsageCategory = Administration;
     SourceTable = EmployeeRegistrations;
     Caption = 'Employee Registrations Card';
 
@@ -50,17 +49,26 @@ page 50114 EmployeeRegistrationsCardPage
     {
         area(Processing)
         {
-            action(ActionName)
+            action(Submit)
             {
-                Caption = 'New Action';
+                Caption = 'Submit';
+                ApplicationArea = All;
+                Enabled = not IsSubmitEnable;
                 trigger OnAction()
+                var
+                    EmployeeRegistrationsCodeunit: Codeunit EmployeeRegistrationCodeunit;
                 begin
-
+                    EmployeeRegistrationsCodeunit.RegisterEmployee(Rec);
                 end;
             }
         }
     }
+    trigger OnOpenPage()
+    begin
+        if REc.EmployeeRegistrationStatus = Rec.EmployeeRegistrationStatus::Submitted then
+            IsSubmitEnable := true;
+    end;
 
     var
-        myInt: Integer;
+        IsSubmitEnable: Boolean;
 }

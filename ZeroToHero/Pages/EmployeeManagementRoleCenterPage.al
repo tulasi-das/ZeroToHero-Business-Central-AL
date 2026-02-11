@@ -4,7 +4,6 @@ page 50108 EmployeeManagementRoleCenter
     ApplicationArea = All;
     UsageCategory = Administration;
     Caption = 'Employee Management';
-    // SourceTable = TableName;
 
     layout
     {

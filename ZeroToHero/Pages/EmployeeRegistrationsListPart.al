@@ -1,7 +1,6 @@
 page 50113 EmployeeRegistrationsCardPart
 {
     PageType = CardPart;
-    ApplicationArea = All;
     UsageCategory = Administration;
     SourceTable = EmployeeRegistrations;
 

@@ -1,7 +1,6 @@
 page 50109 DesignationsListPartPage
 {
     PageType = CardPart;
-    ApplicationArea = All;
     SourceTable = Designations;
     Caption = 'Designations';
 

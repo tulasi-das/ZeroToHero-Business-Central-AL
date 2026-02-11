@@ -1,8 +1,6 @@
 page 50115 EmployeeRegistrationLines
 {
     PageType = ListPart;
-    ApplicationArea = All;
-    UsageCategory = Administration;
     SourceTable = EmployeeRegistrationLines;
     Caption = 'Registration Lines';
 
@@ -33,21 +31,6 @@ page 50115 EmployeeRegistrationLines
                     ApplicationArea = All;
                     Caption = 'Salary Expectations';
                 }
-            }
-        }
-    }
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                Caption = 'New Action';
-                trigger OnAction()
-                begin
-
-                end;
             }
         }
     }

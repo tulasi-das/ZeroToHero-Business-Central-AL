@@ -119,7 +119,7 @@ page 50102 EmployeeCardPage
                     ApplicationArea = All;
                     Caption = 'Department Code';
                 }
-                field(DesignationCode; Rec.DesignationCode)
+                field(DesignationId; Rec.DesignationId)
                 {
                     ApplicationArea = All;
                     Caption = 'Designation Code';
@@ -171,22 +171,6 @@ page 50102 EmployeeCardPage
             {
                 SubPageLink = EmployeeId = field(EmployeeId);
                 ApplicationArea = All;
-            }
-        }
-    }
-
-
-    actions
-    {
-        area(Processing)
-        {
-            action(ActionName)
-            {
-                Caption = 'New Action';
-                trigger OnAction()
-                begin
-
-                end;
             }
         }
     }
