@@ -41,6 +41,7 @@ page 50114 EmployeeRegistrationsCardPage
             part(EmployeeRegistrationLines; EmployeeRegistrationLines)
             {
                 SubPageLink = EmployeeRegistrationNumber = field(EmployeeRegistrationNumber);
+                ApplicationArea = all;
             }
         }
     }

@@ -170,6 +170,7 @@ page 50102 EmployeeCardPage
             part(ContactQuickView; ContactQuickViewFactBox)
             {
                 SubPageLink = EmployeeId = field(EmployeeId);
+                ApplicationArea = All;
             }
         }
     }
