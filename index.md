@@ -74,3 +74,8 @@ More assignment files will be added and linked from this section.
 
 </details>
 
+## About Author
+Tulsidas Biradar is a Microsoft Dynamics 365 Business Central AL developer and trainer, focused on practical AL development and real-world implementation guidance.
+
+LinkedIn: [tulsidas-biradar-377b75177](https://www.linkedin.com/in/tulsidas-biradar-377b75177/)
+
