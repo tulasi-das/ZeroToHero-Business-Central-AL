@@ -36,11 +36,41 @@ GitHub link: [ZeroToHero-Business-Central-AL](https://github.com/tulasi-das/Zero
 <details markdown="1">
 <summary><strong>Assignments</strong></summary>
 
-Assignments for this course are available in the [`Assignments`](./Assignments/) folder.
+Assignments for this course are available here:
 
+- [Open Assignments Page](./Assignments/)
 - [Assignments Diagram](./Assignments/Assignments%20Diagram.drawio)
 
 More assignment files will be added and linked from this section.
+
+</details>
+
+<details markdown="1">
+<summary><strong>PDF Notes</strong></summary>
+
+- [Array Functions in AL](./PDF%20Notes/Array%20Functions%20in%20AL.pdf)
+- [Built in Functions - Interaction Functions](./PDF%20Notes/Built%20in%20Functions%20-%20Interaction%20Functions.pdf)
+- [Codeunits & Types of Procedures](./PDF%20Notes/Codeunits%20%26%20Types%20of%20Procedures.pdf)
+- [Collections in Business Central AL](./PDF%20Notes/Collections%20in%20Business%20Central%20AL.pdf)
+- [Conditional statements](./PDF%20Notes/Conditional%20statements.pdf)
+- [Data Types in Business Central](./PDF%20Notes/Data%20Types%20in%20Business%20Central.pdf)
+- [Debugging in Business Central](./PDF%20Notes/Debugging%20in%20Business%20Central.pdf)
+- [Dependencies, Table extensions & Page extensions](./PDF%20Notes/Dependencies%2C%20Table%20extensions%20%26%20Page%20extensions.pdf)
+- [Flow fields in Business Central AL](./PDF%20Notes/Flow%20fields%20in%20Business%20Central%20AL.pdf)
+- [Init(), Insert(), Modify(), ModifyAll(), Delete(), DeleteAll()](./PDF%20Notes/Init()%2C%20Insert()%2C%20Modify()%2C%20ModifyAll()%2C%20Delete()%2C%20DeleteAll().pdf)
+- [Loop Control Statements](./PDF%20Notes/Loop%20Control%20Statements.pdf)
+- [Numeric Functions](./PDF%20Notes/Numeric%20Functions.pdf)
+- [Options Vs Enums](./PDF%20Notes/Options%20Vs%20Enums.pdf)
+- [Pass Parameters by value, Pass parameters by reference](./PDF%20Notes/Pass%20Parameters%20by%20value%2C%20Pass%20parameters%20by%20reference.pdf)
+- [Record Retrival Methods](./PDF%20Notes/Record%20Retrival%20Methods.pdf)
+- [SetRange() & SetFilter()](./PDF%20Notes/SetRange()%20%26%20SetFilter().pdf)
+- [String Functions in AL](./PDF%20Notes/String%20Functions%20in%20AL.pdf)
+- [Table Triggers & Page Triggers](./PDF%20Notes/Table%20Triggers%20%26%20Page%20Triggers.pdf)
+- [TableRelation](./PDF%20Notes/TableRelation.pdf)
+- [Tables & Pages](./PDF%20Notes/Tables%20%26%20Pages.pdf)
+- [variable functions](./PDF%20Notes/variable%20functions.pdf)
+- [Variables & Scope in Business central](./PDF%20Notes/Variables%20%26%20Scope%20in%20Business%20central.pdf)
+- [What are actions](./PDF%20Notes/What%20are%20actions.pdf)
 
 </details>
 
