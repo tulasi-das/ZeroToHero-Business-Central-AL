@@ -1,5 +1,3 @@
-# Zero to Hero - Business Central AL
-
 Welcome to the **Zero to Hero Business Central AL** course.
 
 Playlist: [Zero to Hero Business Central AL](https://www.youtube.com/playlist?list=PL7Q9Mf55uBuyUvlVgPhD244n2lpXHeKB4)
