@@ -6,7 +6,7 @@ Playlist: [Zero to Hero Business Central AL](https://www.youtube.com/playlist?li
 
 GitHub link: [ZeroToHero-Business-Central-AL](https://github.com/tulasi-das/ZeroToHero-Business-Central-AL)
 
-<details open>
+<details open markdown="1">
 <summary><strong>Course Videos</strong></summary>
 
 1. [Zero To Hero Create Business Central Container For Free! Class #1](https://www.youtube.com/watch?v=2uyVCIxTR2g)
@@ -35,7 +35,7 @@ GitHub link: [ZeroToHero-Business-Central-AL](https://github.com/tulasi-das/Zero
 
 </details>
 
-<details>
+<details markdown="1">
 <summary><strong>Assignments</strong></summary>
 
 Assignments for this course are available in the [`Assignments`](./Assignments/) folder.
@@ -45,3 +45,4 @@ Assignments for this course are available in the [`Assignments`](./Assignments/)
 More assignment files will be added and linked from this section.
 
 </details>
+
