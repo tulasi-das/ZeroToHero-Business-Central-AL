@@ -1,11 +1,13 @@
+# Zero to Hero - Business Central AL
+
 Welcome to the **Zero to Hero Business Central AL** course.
 
 Playlist: [Zero to Hero Business Central AL](https://www.youtube.com/playlist?list=PL7Q9Mf55uBuyUvlVgPhD244n2lpXHeKB4)
 
 GitHub link: [ZeroToHero-Business-Central-AL](https://github.com/tulasi-das/ZeroToHero-Business-Central-AL)
 
-## Course Videos
-
+<details open>
+<summary><strong>Course Videos</strong></summary>
 
 1. [Zero To Hero Create Business Central Container For Free! Class #1](https://www.youtube.com/watch?v=2uyVCIxTR2g)
 2. [Zero To Hero: Business Central Overview (Technical Standpoint) Class #2](https://www.youtube.com/watch?v=aWr9qBmqDV4)
@@ -31,7 +33,10 @@ GitHub link: [ZeroToHero-Business-Central-AL](https://github.com/tulasi-das/Zero
 22. [Zero To Hero: Mastering Variable Functions in Business Central AL](https://www.youtube.com/watch?v=r-Fi-eu8rGY)
 23. [Zero To Hero: Options Vs Enums Explained with examples in Business  Central AL](https://www.youtube.com/watch?v=g2n_dCW5NDM)
 
-## Assignments
+</details>
+
+<details>
+<summary><strong>Assignments</strong></summary>
 
 Assignments for this course are available in the [`Assignments`](./Assignments/) folder.
 
@@ -39,3 +44,4 @@ Assignments for this course are available in the [`Assignments`](./Assignments/)
 
 More assignment files will be added and linked from this section.
 
+</details>
