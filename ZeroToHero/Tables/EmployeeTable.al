@@ -51,6 +51,115 @@ table 50100 EmployeeTable
                     EmployeeOps.ShowEmployeeAccountTypeEnumFullTime(EmployeeeAccountTypeEnum);
             end;
         }
+        field(6; EmployeeIdValue; Code[20])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(7; FirstName; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(8; MiddleName; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(9; LastName; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(10; FullName; Text[150])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(11; Gender; Enum EmployeeGender)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(12; DateOfBirth; Date)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(13; MaritialStatus; Enum MaritialStatus)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(14; Nationality; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(15; Email; Text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(16; PhoneNumber; Text[30])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(17; EmergencyContact; Text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(18; Address; Text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(19; Addres2; Text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(20; City; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(21; PostCode; Code[20])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(22; Stateprovince; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(23; Country; Text[50])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(24; DepartmentCode; Code[20])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(25; DesignationCode; Code[20])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(26; DateOfJoining; Date)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(27; EmploymentStatus; Enum EmploymentStatus)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(28; BankAccountNo; Code[30])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(29; BankName; Text[100])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(30; BasicSalary; Decimal)
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(31; Comments; Text[250])
+        {
+            DataClassification = ToBeClassified;
+        }
+        field(32; EmployeeCount; Integer)
+        {
+            FieldClass = FlowField;
+            CalcFormula = count(EmployeeTable);
+        }
     }
 
     keys
@@ -92,3 +201,5 @@ table 50100 EmployeeTable
     protected var
         number: Integer;
 }
+
+

@@ -4,6 +4,8 @@ page 50100 EmployeePage
     ApplicationArea = All;
     UsageCategory = Lists;
     SourceTable = EmployeeTable;
+    CardPageId = EmployeeCardPage;
+    Caption = 'Employees';
 
     layout
     {
@@ -13,23 +15,38 @@ page 50100 EmployeePage
             {
                 field(EmployeeId; Rec.EmployeeId)
                 {
-
+                    ApplicationArea = All;
+                    Caption = 'Employee ID';
                 }
                 field(EmployeeName; Rec.EmployeeName)
                 {
-
+                    ApplicationArea = All;
+                    Caption = 'Name';
                 }
                 field(EmployeeAge; Rec.EmployeeAge)
                 {
-
+                    ApplicationArea = All;
+                    Caption = 'Age';
                 }
                 field(EmployeeeAccountTypeOption; Rec.EmployeeeAccountTypeOption)
                 {
-
+                    ApplicationArea = All;
+                    Caption = 'Account Type (Option)';
                 }
                 field(EmployeeeAccountTypeEnum; Rec.EmployeeeAccountTypeEnum)
                 {
-
+                    ApplicationArea = All;
+                    Caption = 'Account Type (Enum)';
+                }
+                field(EmployeeIdValue; Rec.EmployeeIdValue)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Employee ID Value';
+                }
+                field(BasicSalary; Rec.BasicSalary)
+                {
+                    ApplicationArea = All;
+                    Caption = 'Basic Salary';
                 }
             }
         }
@@ -41,6 +58,7 @@ page 50100 EmployeePage
         {
             action(ProcessingAction)
             {
+                Caption = 'Processing Action';
                 trigger OnAction()
                 begin
                     Message('Processing Action Triggered');
@@ -48,7 +66,7 @@ page 50100 EmployeePage
             }
             action(ProcessingAction2)
             {
-                // Promoted = true;
+                Caption = 'Processing Action 2';
                 trigger OnAction()
                 begin
                     Message('Processing Action 2 Triggered');
@@ -56,7 +74,7 @@ page 50100 EmployeePage
             }
             action(CallEmployeeOprationsCodeunit)
             {
-                // Promoted = true;
+                Caption = 'Call Employee Operations';
                 trigger OnAction()
                 var
                     EmployeeCodeunit: Codeunit EmployeeOperations;
@@ -66,18 +84,17 @@ page 50100 EmployeePage
             }
             action(CallEmployeeOprationsCodeunitInternalProcedure)
             {
-                // Promoted = true;
+                Caption = 'Call Employee Operations - Internal';
                 trigger OnAction()
                 var
                     EmployeeCodeunit: Codeunit EmployeeOperations;
                 begin
-                    // EmployeeCodeunit.Run();
                     EmployeeCodeunit.SampleInternalProcedure();
                 end;
             }
             action(RetriveRecord)
             {
-
+                Caption = 'Retrieve Record';
                 trigger OnAction()
                 var
                     EmployeeOperations: Codeunit EmployeeOperations;
@@ -87,7 +104,7 @@ page 50100 EmployeePage
             }
             action(RetriveRecordByFilter)
             {
-
+                Caption = 'Retrieve Record by Filter';
                 trigger OnAction()
                 var
                     EmployeeOperations: Codeunit EmployeeOperations;
@@ -97,6 +114,7 @@ page 50100 EmployeePage
             }
             action(DoRecordOperations)
             {
+                Caption = 'Delete Records';
                 trigger OnAction()
                 var
                     EmployeeOperations: Codeunit EmployeeOperations;
@@ -106,6 +124,7 @@ page 50100 EmployeePage
             }
             action(CallVariables)
             {
+                Caption = 'Use Variables';
                 trigger OnAction()
                 var
                     EmployeeOperations: Codeunit EmployeeOperations;
@@ -119,6 +138,7 @@ page 50100 EmployeePage
         {
             action(CreationAction)
             {
+                Caption = 'Creation Action';
                 trigger OnAction()
                 begin
                     Message('Creation Action Triggered');
@@ -129,6 +149,7 @@ page 50100 EmployeePage
         {
             action(NavigationAction)
             {
+                Caption = 'Navigation Action';
                 trigger OnAction()
                 begin
                     Message('Navigation Action Triggered');
@@ -139,6 +160,7 @@ page 50100 EmployeePage
         {
             action(ReportingAction)
             {
+                Caption = 'Reporting Action';
                 trigger OnAction()
                 begin
                     Message('Reporting Action Triggered');

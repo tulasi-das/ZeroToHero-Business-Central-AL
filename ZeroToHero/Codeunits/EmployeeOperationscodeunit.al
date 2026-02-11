@@ -2,11 +2,15 @@ codeunit 50100 EmployeeOperations
 {
     trigger OnRun()
     var
-        EmployeePage: PAGE EmployeePage;
+        VarInteger: Integer;
     begin
         // Message('Employee Operations Codeunit Run');
         SampleLocalProcedure();
         // EmployeePage.SampleProtectedProcedure();
+        VarInteger := 10;
+        if VarInteger > 10 then
+            Message('varinteger: %1', VarInteger);
+
     end;
 
 
@@ -454,6 +458,35 @@ codeunit 50100 EmployeeOperations
     internal procedure PassParameters(var EmployeeRec: Record EmployeeTable)
     begin
         EmployeeRec.EmployeeName := 'Rajath';
+    end;
+
+    internal procedure DebuggingProcedure()
+    begin
+        DebuggingProcedure1();
+        DebuggingProcedure3();
+    end;
+
+
+    local procedure DebuggingProcedure1()
+    var
+        Number1: Integer;
+    begin
+        Number1 := 10;
+        DebuggingProcedure2();
+    end;
+
+    local procedure DebuggingProcedure2()
+    var
+        Number2: Integer;
+    begin
+        Number2 := 10;
+    end;
+
+    local procedure DebuggingProcedure3()
+    var
+        Number3: Integer;
+    begin
+        Number3 := 10;
     end;
 
     var
