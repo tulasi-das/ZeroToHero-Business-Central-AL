@@ -2,7 +2,7 @@
 
 This section contains assignment files for the **Zero to Hero Business Central AL** course.
 
-<details>
+<details markdown="1">
 <summary><strong>Assignment #1</strong></summary>
 
 - [Assignments Diagram](./Assignments%20Diagram.drawio)
