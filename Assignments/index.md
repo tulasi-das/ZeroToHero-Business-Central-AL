@@ -2,7 +2,9 @@
 
 This section contains assignment files for the **Zero to Hero Business Central AL** course.
 
-## Assignment #1
+
+<details>
+<summary><strong>Assignment #1</strong></summary>
 
 - [Assignments Diagram](./Assignments%20Diagram.drawio)
 
@@ -89,7 +91,6 @@ Start each task by creating the table, then add the listed fields with the given
 
 2. Create pages --> add fields
 
-
 - Create `ContactQuickViewFactbox` (`PageType = CardPart`)
   - `area(Content)` -> `group(QuickInformation)`: `Email`, `PhoneNumber`, `Address`
 
@@ -170,3 +171,5 @@ Start each task by creating the table, then add the listed fields with the given
 
 - `UpdateDesignations(DesignationID)`
   - Reduces `AvaialablePositions` by `1` after successful posting.
+
+</details>
