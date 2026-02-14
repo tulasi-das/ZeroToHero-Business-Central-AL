@@ -2,8 +2,10 @@
 
 This section contains assignment files for the **Zero to Hero Business Central AL** course.
 
-<details markdown="1">
+<details markdown="block">
 <summary><strong>Assignment #1</strong></summary>
+
+<div markdown="1">
 
 - [Assignments Diagram](./Assignments%20Diagram.drawio)
 
@@ -171,5 +173,7 @@ Start each task by creating the table, then add the listed fields with the given
 
 - `UpdateDesignations(DesignationID)`
   - Reduces `AvaialablePositions` by `1` after successful posting.
+
+</div>
 
 </details>

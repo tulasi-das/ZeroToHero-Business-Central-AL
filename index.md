@@ -131,7 +131,7 @@ If this course is helping you, please consider subscribing to support more free 
 
 Assignments for this course are available here:
 
-- [Assignments Diagram](./Assignments/Assignments%20Diagram.drawio)
+- [Open Assignments Page](./Assignments/)
 
 More assignment files will be added and linked from this section.
 
