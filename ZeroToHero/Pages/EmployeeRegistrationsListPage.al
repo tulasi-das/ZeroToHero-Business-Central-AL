@@ -33,6 +33,23 @@ page 50112 EmployeeRegistrationsList
         }
     }
 
+    actions
+    {
+        area(Processing)
+        {
+            action(GetEmployeeRegistrations)
+            {
+                Caption = 'Get Employee Registrations';
+                trigger OnAction()
+                var
+                    EmployeeWebServices: Codeunit EmployeeWebServices;
+                begin
+                    EmployeeWebServices.GetEmployeeRegistrations();
+                end;
+            }
+        }
+    }
+
     var
         myInt: Integer;
 }
