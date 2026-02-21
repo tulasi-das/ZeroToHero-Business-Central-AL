@@ -47,6 +47,17 @@ page 50112 EmployeeRegistrationsList
                     EmployeeWebServices.GetEmployeeRegistrations();
                 end;
             }
+            action(PostEmployeeRegistrations)
+            {
+                Caption = 'Post Employee Registrations';
+                trigger OnAction()
+                var
+                    EmployeeWebServices: Codeunit EmployeeWebServices;
+                begin
+                    EmployeeWebServices.SetRecordSytemID(Rec.SystemId);
+                    EmployeeWebServices.GeneratePayLoad();
+                end;
+            }
         }
     }
 
