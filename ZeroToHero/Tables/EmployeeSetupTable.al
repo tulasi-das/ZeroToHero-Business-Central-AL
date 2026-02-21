@@ -6,6 +6,10 @@ table 50101 EmployeeSetupTable
     fields
     {
         //Stores whole numbers with values that range from -2,147,483,647 to 2,147,483,647.
+        field(19; PrimaryKey; Integer)
+        {
+            DataClassification = ToBeClassified;
+        }
         field(1; IntegerType; Integer)
         {
             DataClassification = ToBeClassified;
@@ -99,10 +103,14 @@ table 50101 EmployeeSetupTable
         {
             Caption = 'Employee ID';
         }
+        field(18; WebServicesURL; Text[100])
+        {
+            Caption = 'Web Services URL';
+        }
     }
     keys
     {
-        key(Key1; IntegerType)
+        key(Key1; PrimaryKey)
         {
             Clustered = true;
         }

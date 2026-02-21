@@ -489,6 +489,88 @@ codeunit 50100 EmployeeOperations
         Number3 := 10;
     end;
 
+
+    internal procedure CallTryFunction(EmployeeTable: Record EmployeeTable)
+    var
+        ErrorText: Text;
+    begin
+        if not CheckBasicSalaryLessThan20(EmployeeTable) then
+            ErrorText := ErrorText + GetLastErrorText();
+        if not CheckBasicSalaryLessThan30(EmployeeTable) then
+            ErrorText := ErrorText + GetLastErrorText();
+
+        Error(ErrorText);
+    end;
+
+    [TryFunction]
+    internal procedure CheckBasicSalaryLessThan20(EmployeeTable: Record EmployeeTable)
+    begin
+        if EmployeeTable.BasicSalary < 20 then begin
+            Error('The basic salary is less than 20')
+        end;
+    end;
+
+    [TryFunction]
+    internal procedure CheckBasicSalaryLessThan30(EmployeeTable: Record EmployeeTable)
+    begin
+        if EmployeeTable.BasicSalary < 30 then begin
+            Error('The basic salary is less than 30')
+        end;
+    end;
+
+    procedure FixSomeError(ErrorInfo: ErrorInfo)
+    begin
+        Message('This is a fix message');
+    end;
+
+    internal procedure CallErrorInfo()
+    var
+        VarErrorInfo: ErrorInfo;
+    begin
+        // Error('This is a test message');
+        VarErrorInfo.Message := 'This is a test messsage, but from error info';
+        VarErrorInfo.AddAction('Click To fix', 50100, 'FixSomeError');
+        Error(VarErrorInfo);
+    end;
+
+    [ErrorBehavior(ErrorBehavior::Collect)]
+    internal procedure CollectibleErrors()
+    var
+        VarErrorInfo: ErrorInfo;
+        Error: Record "Error Message" temporary;
+    begin
+        FirstErrorMessage();
+        SecondErrorMessage();
+        if HasCollectedErrors then
+            foreach VarErrorInfo in system.GetCollectedErrors() do begin
+                Error.ID := Error.ID + 1;
+                Error.Message := VarErrorInfo.Message;
+                Error.Insert();
+            end;
+
+        ClearCollectedErrors();
+        Page.RunModal(Page::"Error Messages", Error);
+
+    end;
+
+    internal procedure FirstErrorMessage()
+    var
+        VarErrorInfo: ErrorInfo;
+    begin
+        VarErrorInfo := ErrorInfo.Create();
+        VarErrorInfo.Message := 'This is first error message';
+        Error(VarErrorInfo);
+    end;
+
+    internal procedure SecondErrorMessage()
+    var
+        VarErrorInfo: ErrorInfo;
+    begin
+        VarErrorInfo := ErrorInfo.Create();
+        VarErrorInfo.Message := 'This is second error message';
+        Error(VarErrorInfo);
+    end;
+
     var
         myInt: Integer;
 

@@ -148,6 +148,14 @@ page 50101 EmployeeSetupPage
                     Caption = 'Record Exists';
                 }
             }
+            group(WebServices)
+            {
+                field(WebServicesURL; Rec.WebServicesURL)
+                {
+                    ApplicationArea = All;
+                    Caption = 'WebServices URL';
+                }
+            }
         }
     }
 

@@ -132,6 +132,33 @@ page 50100 EmployeePage
                     EmployeeOperations.UseVariable();
                 end;
             }
+            action(CallTryFunction)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOperations: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOperations.CallTryFunction(Rec);
+                end;
+            }
+            action(CallErrorInfo)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOperations: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOperations.CallErrorInfo();
+                end;
+            }
+            action(CollectibleErros)
+            {
+                trigger OnAction()
+                var
+                    EmployeeOps: Codeunit EmployeeOperations;
+                begin
+                    EmployeeOps.CollectibleErrors();
+                end;
+            }
 
         }
         area(Creation)
