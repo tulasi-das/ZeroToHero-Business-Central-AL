@@ -126,27 +126,27 @@ If this course is helping you, please consider subscribing to support more free 
 
 <details>
 <summary><a href="https://youtu.be/rhqy6YZ_gjA?si=_6IfkSul_y3fnUmE">24. Zero To Hero: Master Debugging in Business Central AL</a></summary>
-<iframe width="100%" height="480" src="https://youtu.be/rhqy6YZ_gjA?si=_6IfkSul_y3fnUmE" title="Class 23" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/rhqy6YZ_gjA" title="Class 23" frameborder="0" allowfullscreen></iframe>
 </details>
 
 <details>
 <summary><a href="https://youtu.be/aUtkAlzBKKA?si=CZIRiMnU2uVkM-pn">25. Zero To Hero: AL Explorer Tutorial for Beginners</a></summary>
-<iframe width="100%" height="480" src="https://youtu.be/aUtkAlzBKKA?si=CZIRiMnU2uVkM-pn" title="Class 23" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/aUtkAlzBKKA" title="Class 23" frameborder="0" allowfullscreen></iframe>
 </details>
 
 <details>
 <summary><a href="https://youtu.be/3Sk4vIdROQ8?si=zk0CcV-q-OaVxKA1">26. Zero To Hero: What is Pass Parameter By Value & Pass Parameter By Reference in Busienss Central AL</a></summary>
-<iframe width="100%" height="480" src="https://youtu.be/3Sk4vIdROQ8?si=zk0CcV-q-OaVxKA1" title="Class 23" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/3Sk4vIdROQ8" title="Class 23" frameborder="0" allowfullscreen></iframe>
 </details>
 
 <details>
 <summary><a href="https://youtu.be/vj_7ez7PNvY?si=5S9wMQoM_VEbcdg8">27. Zero To Hero: Different Types Pages In Business Central AL</a></summary>
-<iframe width="100%" height="480" src="https://youtu.be/vj_7ez7PNvY?si=5S9wMQoM_VEbcdg8" title="Class 23" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/vj_7ez7PNvY" title="Class 23" frameborder="0" allowfullscreen></iframe>
 </details>
 
 <details>
 <summary><a href="https://youtu.be/VYX_0v8inMI?si=MOSZzZE7ylNRyCLE">28. Zero To Hero: Table Relation, FieldGroups & LookupPageID  Business Central AL</a></summary>
-<iframe width="100%" height="480" src="https://youtu.be/VYX_0v8inMI?si=MOSZzZE7ylNRyCLE" title="Class 23" frameborder="0" allowfullscreen></iframe>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/VYX_0v8inMI" title="Class 23" frameborder="0" allowfullscreen></iframe>
 </details>
 
 </details>
