@@ -33,6 +33,26 @@ page 50112 EmployeeRegistrationsList
         }
     }
 
+    actions
+    {
+        area(Processing)
+        {
+            action(ExportToXML)
+            {
+                Caption = 'Export to XML';
+                ApplicationArea = All;
+                Image = Export;
+
+                trigger OnAction()
+                var
+                    ExportEmployeeRegistrationsXML: XmlPort ExpEmployeeRegistrationsXML;
+                begin
+                    ExportEmployeeRegistrationsXML.Run();
+                end;
+            }
+        }
+
+    }
     var
         myInt: Integer;
 }
