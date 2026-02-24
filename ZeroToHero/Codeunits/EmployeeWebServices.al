@@ -5,43 +5,58 @@ codeunit 50102 EmployeeWebServices
     var
         HttpMethod: Enum "Http Method";
         HttpResponseText: Text;
+        RequestURIType: Text;
     begin
-        SendAPIRequest(HttpMethod::GET, HttpResponseText);
+        RequestURIType := 'GetEmployeeRegistrations';
+        SendAPIRequest(HttpMethod::GET, RequestURIType, HttpResponseText);
+        Message(HttpResponseText);
     end;
 
     procedure PostEmployeeRegistrations()
     var
         HttpMethod: Enum "Http Method";
         HttpResponseText: Text;
+        RequestURIType: Text;
     begin
-        SendAPIRequest(HttpMethod::GET, HttpResponseText);
+        RequestURIType := 'PostEmployeeRegistrations';
+        SendAPIRequest(HttpMethod::POST, RequestURIType, HttpResponseText);
+        Message(HttpResponseText);
     end;
 
     procedure PutEmployeeRegistrations()
     var
         HttpMethod: Enum "Http Method";
         HttpResponseText: Text;
+        RequestURIType: Text;
     begin
-        SendAPIRequest(HttpMethod::GET, HttpResponseText);
+        RequestURIType := 'PutEmployeeRegistrations';
+        SendAPIRequest(HttpMethod::PUT, RequestURIType, HttpResponseText);
+        Message(HttpResponseText);
     end;
 
     procedure PatchEmployeeRegistrations()
     var
         HttpMethod: Enum "Http Method";
         HttpResponseText: Text;
+        RequestURIType: Text;
     begin
-        SendAPIRequest(HttpMethod::GET, HttpResponseText);
+        RequestURIType := 'PatchEmployeeRegistrations';
+        SendAPIRequest(HttpMethod::PATCH, RequestURIType, HttpResponseText);
+        Message(HttpResponseText);
     end;
 
     procedure DeleteEmployeeRegistrations()
     var
         HttpMethod: Enum "Http Method";
         HttpResponseText: Text;
+        RequestURIType: Text;
     begin
-        SendAPIRequest(HttpMethod::GET, HttpResponseText);
+        RequestURIType := 'DeleteEmployeeRegistrations';
+        SendAPIRequest(HttpMethod::DELETE, RequestURIType, HttpResponseText);
+        Message(HttpResponseText);
     end;
 
-    procedure SendAPIRequest(HttpMethod: Enum "Http Method"; var HttpResponseText: Text)
+    procedure SendAPIRequest(HttpMethod: Enum "Http Method"; RequestURIType: Text; var HttpResponseText: Text)
     var
         EmployeeSetupRec: Record EmployeeSetupTable;
         HttpClient: HttpClient;
@@ -49,6 +64,7 @@ codeunit 50102 EmployeeWebServices
         HttpResponseMessage: HttpResponseMessage;
         HttpHeaders: HttpHeaders;
         HttpContent: HttpContent;
+        PayLoad: Text;
     begin
         if not EmployeeSetupRec.Get() then
             exit;
@@ -57,7 +73,11 @@ codeunit 50102 EmployeeWebServices
             exit;
 
         HttpRequestMessage.Method := Format(HttpMethod);
-        HttpRequestMessage.SetRequestUri(EmployeeSetupRec.WebServicesURL);
+        HttpRequestMessage.SetRequestUri(EmployeeSetupRec.WebServicesURL + RequestURIType);
+
+        PayLoad := GenereatePayLoadForRequest(HttpMethod);
+
+        HttpRequestMessage.Content().WriteFrom(PayLoad);
 
         if HttpClient.Send(HttpRequestMessage, HttpResponseMessage) then begin
             Clear(HttpContent);
@@ -76,14 +96,36 @@ codeunit 50102 EmployeeWebServices
                 begin
                     exit(PayLoad);
                 end;
-            HttpMethod::POST, HttpMethod::PUT, HttpMethod::PATCH, HttpMethod::DELETE:
+            HttpMethod::POST, HttpMethod::PUT:
                 begin
-                    exit(GeneratePayLoad());
+                    exit(GeneratePayLoadForPostAndPut());
+                end;
+            HttpMethod::PATCH, HttpMethod::DELETE:
+                begin
+                    exit(GeneratePayLoadForPatchAndDelete());
                 end;
         end;
     end;
 
-    internal procedure GeneratePayLoad(): Text
+    internal procedure GeneratePayLoadForPatchAndDelete(): Text
+    var
+        EmployeeRegistrationRec: Record EmployeeRegistrations;
+        SystemID: Guid;
+        JsonObject: JsonObject;
+        PayLoad: Text;
+    begin
+        SystemID := GetRecordSystemID();
+
+        if EmployeeRegistrationRec.GetBySystemId(SystemID) then begin
+            JsonObject.Add(EmployeeRegistrationRec.FieldCaption(EmployeeRegistrationRec.EmployeeRegistrationNumber), EmployeeRegistrationRec.EmployeeRegistrationNumber);
+            JsonObject.Add(EmployeeRegistrationRec.FieldCaption(EmployeeRegistrationRec.EmployeeName), EmployeeRegistrationRec.EmployeeName);
+        end;
+
+        JsonObject.WriteTo(PayLoad);
+        exit(PayLoad);
+    end;
+
+    internal procedure GeneratePayLoadForPostAndPut(): Text
     var
         EmployeeRegistrationRec: Record EmployeeRegistrations;
         EmployeeRegistrationLinesRec: Record EmployeeRegistrationLines;
@@ -112,16 +154,15 @@ codeunit 50102 EmployeeWebServices
         end;
         JsonObject.Add(EmployeeRegistrationLines, JsonArrayLines);
         JsonObject.WriteTo(PayLoad);
-        Message(PayLoad);
         exit(PayLoad);
     end;
 
-    internal procedure SetRecordSytemID(SystemID: guid)
+    procedure SetRecordSytemID(SystemID: guid)
     begin
         GlobalSystemID := SystemID;
     end;
 
-    internal procedure GetRecordSystemID(): Guid
+    procedure GetRecordSystemID(): Guid
     begin
         exit(GlobalSystemID);
     end;

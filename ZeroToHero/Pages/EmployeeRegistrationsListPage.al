@@ -55,7 +55,40 @@ page 50112 EmployeeRegistrationsList
                     EmployeeWebServices: Codeunit EmployeeWebServices;
                 begin
                     EmployeeWebServices.SetRecordSytemID(Rec.SystemId);
-                    EmployeeWebServices.GeneratePayLoad();
+                    EmployeeWebServices.PostEmployeeRegistrations();
+                end;
+            }
+            action(PutEmployeeRegistrations)
+            {
+                Caption = 'Put Employee Registrations';
+                trigger OnAction()
+                var
+                    EmployeeWebServices: Codeunit EmployeeWebServices;
+                begin
+                    EmployeeWebServices.SetRecordSytemID(Rec.SystemId);
+                    EmployeeWebServices.PutEmployeeRegistrations();
+                end;
+            }
+            action(PatchEmployeeRegistrations)
+            {
+                Caption = 'Patch Employee Registrations';
+                trigger OnAction()
+                var
+                    EmployeeWebServices: Codeunit EmployeeWebServices;
+                begin
+                    EmployeeWebServices.SetRecordSytemID(Rec.SystemId);
+                    EmployeeWebServices.PatchEmployeeRegistrations();
+                end;
+            }
+            action(DeleteEmployeeRegistrations)
+            {
+                Caption = 'Delete Employee Registrations';
+                trigger OnAction()
+                var
+                    EmployeeWebServices: Codeunit EmployeeWebServices;
+                begin
+                    EmployeeWebServices.SetRecordSytemID(Rec.SystemId);
+                    EmployeeWebServices.DeleteEmployeeRegistrations();
                 end;
             }
         }

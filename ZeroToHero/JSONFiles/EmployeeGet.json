@@ -1,0 +1,19 @@
+{
+  "Employee Registration Number": 0,
+  "Employee Name": "Ramesh",
+  "Registration Status": 1,
+  "Employee Registration Lines": [
+    {
+      "Line Number": 1,
+      "Department": 1,
+      "Designation Name": "Associate Professor",
+      "Salary Expectations": 5000
+    },
+    {
+      "Line Number": 2,
+      "Department": 6,
+      "Designation Name": "professor",
+      "Salary Expectations": 0
+    }
+  ]
+}
