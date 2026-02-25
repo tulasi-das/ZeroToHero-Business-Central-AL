@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+               xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <Delete xmlns="urn:microsoft-dynamics-schemas/page/employeepage">
+      <Key>PASTE_KEY_HERE</Key>
+    </Delete>
+  </soap:Body>
+</soap:Envelope>

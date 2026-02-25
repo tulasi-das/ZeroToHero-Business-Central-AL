@@ -1,0 +1,4 @@
+{
+    "Content-Type": "text/xml; charset=utf-8",
+    "SOAPAction": "urn:microsoft-dynamics-schemas/page/employeepage"
+}
