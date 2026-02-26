@@ -227,10 +227,6 @@ page 50100 EmployeePage
         // exit(true);
     end;
 
-    protected procedure SampleProtectedProcedure()
-    begin
-        Message('Sample Protected Procedure in Employee Page');
-    end;
 
     var
         myInt: Integer;

@@ -1,0 +1,1027 @@
+{
+  "info": {
+    "_postman_id": "ac8f79a4-3044-47e1-a4fb-5f99f33aed2d",
+    "name": "Zero-To-hero",
+    "description": "### Welcome to Postman! This is your first collection. \n\nCollections are your starting point for building and testing APIs. You can use this one to:\n\n• Group related requests\n• Test your API in real-world scenarios\n• Document and share your requests\n\nUpdate the name and overview whenever you’re ready to make it yours.\n\n[Learn more about Postman Collections.](https://learning.postman.com/docs/collections/collections-overview/)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Business Central WebServices",
+      "item": [
+        {
+          "name": "SOAP",
+          "item": [
+            {
+              "name": "ReadMultipleEmployees",
+              "id": "b11d94da-f464-477b-a5d9-446f67cd0024",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "text/xml; charset=utf-8",
+                    "type": "text"
+                  },
+                  {
+                    "key": "SOAPAction",
+                    "value": "\"urn:microsoft-dynamics-schemas/page/employeepage\"",
+                    "type": "text"
+                  },
+                  {
+                    "key": "",
+                    "value": "",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n               xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\r\n               xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <ReadMultiple xmlns=\"urn:microsoft-dynamics-schemas/page/employeepage\">\r\n      <setSize>100</setSize>\r\n    </ReadMultiple>\r\n  </soap:Body>\r\n</soap:Envelope>",
+                  "options": {
+                    "raw": {
+                      "language": "xml"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7047/BC/WS/CRONUS%20International%20Ltd./Page/EmployeePage?wsdl",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7047",
+                  "path": [
+                    "BC",
+                    "WS",
+                    "CRONUS%20International%20Ltd.",
+                    "Page",
+                    "EmployeePage"
+                  ],
+                  "query": [
+                    {
+                      "key": "wsdl",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "ReadMultipleEmloyeesWithFilter",
+              "id": "ef047e73-ff3b-48c2-964e-0cb23e04dbe1",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "text/xml; charset=utf-8",
+                    "type": "text"
+                  },
+                  {
+                    "key": "SOAPAction",
+                    "value": "\"urn:microsoft-dynamics-schemas/page/employeepage\"",
+                    "type": "text"
+                  },
+                  {
+                    "key": "",
+                    "value": "",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n               xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\r\n               xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <ReadMultiple xmlns=\"urn:microsoft-dynamics-schemas/page/employeepage\">\r\n  <filter>\r\n    <Field>EmployeeId</Field>\r\n    <Criteria>10</Criteria>\r\n  </filter>\r\n  <setSize>1</setSize>\r\n</ReadMultiple>\r\n  </soap:Body>\r\n</soap:Envelope>",
+                  "options": {
+                    "raw": {
+                      "language": "xml"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7047/BC/WS/CRONUS%20International%20Ltd./Page/EmployeePage?wsdl",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7047",
+                  "path": [
+                    "BC",
+                    "WS",
+                    "CRONUS%20International%20Ltd.",
+                    "Page",
+                    "EmployeePage"
+                  ],
+                  "query": [
+                    {
+                      "key": "wsdl",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "ReadEmployee",
+              "id": "9c2eae59-1a70-4a02-9f30-eaa89ce79c65",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "text/xml; charset=utf-8",
+                    "type": "text"
+                  },
+                  {
+                    "key": "SOAPAction",
+                    "value": "\"urn:microsoft-dynamics-schemas/page/employeepage\"",
+                    "type": "text"
+                  },
+                  {
+                    "key": "",
+                    "value": "",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n               xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\r\n               xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <Read xmlns=\"urn:microsoft-dynamics-schemas/page/employeepage\">\r\n      <EmployeeId>10</EmployeeId>\r\n    </Read>\r\n  </soap:Body>\r\n</soap:Envelope>",
+                  "options": {
+                    "raw": {
+                      "language": "xml"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7047/BC/WS/CRONUS%20International%20Ltd./Page/EmployeePage?wsdl",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7047",
+                  "path": [
+                    "BC",
+                    "WS",
+                    "CRONUS%20International%20Ltd.",
+                    "Page",
+                    "EmployeePage"
+                  ],
+                  "query": [
+                    {
+                      "key": "wsdl",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "CreateEmployee",
+              "id": "0929e67f-bbae-4f02-a0b3-55980b76556e",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "text/xml; charset=utf-8",
+                    "type": "text"
+                  },
+                  {
+                    "key": "SOAPAction",
+                    "value": "\"urn:microsoft-dynamics-schemas/page/employeepage\"",
+                    "type": "text"
+                  },
+                  {
+                    "key": "",
+                    "value": "",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n               xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\r\n               xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <Create xmlns=\"urn:microsoft-dynamics-schemas/page/employeepage\">\r\n      <EmployeePage>\r\n        <EmployeeId>2001</EmployeeId>\r\n        <EmployeeName >Rahul</EmployeeName>\r\n        <EmployeeAge>21</EmployeeAge >\r\n      </EmployeePage>\r\n    </Create>\r\n  </soap:Body>\r\n</soap:Envelope>",
+                  "options": {
+                    "raw": {
+                      "language": "xml"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7047/BC/WS/CRONUS%20International%20Ltd./Page/EmployeePage?wsdl",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7047",
+                  "path": [
+                    "BC",
+                    "WS",
+                    "CRONUS%20International%20Ltd.",
+                    "Page",
+                    "EmployeePage"
+                  ],
+                  "query": [
+                    {
+                      "key": "wsdl",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "UpdateEmployee",
+              "id": "356b32a2-2d8b-4a8f-86e6-30cb4ca5b20f",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "text/xml; charset=utf-8",
+                    "type": "text"
+                  },
+                  {
+                    "key": "SOAPAction",
+                    "value": "\"urn:microsoft-dynamics-schemas/page/employeepage\"",
+                    "type": "text"
+                  },
+                  {
+                    "key": "",
+                    "value": "",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n               xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\r\n               xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <Update xmlns=\"urn:microsoft-dynamics-schemas/page/employeepage\">\r\n      <EmployeePage>\r\n        <Key>12;tMMAAACH0Qc=6;3167650;</Key>\r\n        <EmployeeId>80</EmployeeId>\r\n        <EmployeeName>Mahesh</EmployeeName>\r\n      </EmployeePage>\r\n    </Update>\r\n  </soap:Body>\r\n</soap:Envelope>",
+                  "options": {
+                    "raw": {
+                      "language": "xml"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7047/BC/WS/CRONUS%20International%20Ltd./Page/EmployeePage?wsdl",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7047",
+                  "path": [
+                    "BC",
+                    "WS",
+                    "CRONUS%20International%20Ltd.",
+                    "Page",
+                    "EmployeePage"
+                  ],
+                  "query": [
+                    {
+                      "key": "wsdl",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DeleteEmployee",
+              "id": "191fac1e-4925-463a-8866-654b84ec1db4",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "text/xml; charset=utf-8",
+                    "type": "text"
+                  },
+                  {
+                    "key": "SOAPAction",
+                    "value": "\"urn:microsoft-dynamics-schemas/page/employeepage\"",
+                    "type": "text"
+                  },
+                  {
+                    "key": "",
+                    "value": "",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n               xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\r\n               xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <Delete xmlns=\"urn:microsoft-dynamics-schemas/page/employeepage\">\r\n      <Key>12;tMMAAACHUA==6;3167870;</Key>\r\n    </Delete>\r\n  </soap:Body>\r\n</soap:Envelope>",
+                  "options": {
+                    "raw": {
+                      "language": "xml"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7047/BC/WS/CRONUS%20International%20Ltd./Page/EmployeePage?wsdl",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7047",
+                  "path": [
+                    "BC",
+                    "WS",
+                    "CRONUS%20International%20Ltd.",
+                    "Page",
+                    "EmployeePage"
+                  ],
+                  "query": [
+                    {
+                      "key": "wsdl",
+                      "value": null
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "CallProcedure",
+              "id": "1849a70b-03e3-4d5f-9c1b-b5bba9da1d2b",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "text/xml; charset=utf-8",
+                    "type": "text"
+                  },
+                  {
+                    "key": "SOAPAction",
+                    "value": "urn:microsoft-dynamics-schemas/codeunit/GetEmployeeList:GetEmployees",
+                    "type": "text"
+                  },
+                  {
+                    "key": "",
+                    "value": "",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r\n               xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\r\n               xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r\n  <soap:Body>\r\n    <GetEmployeeList xmlns=\"urn:microsoft-dynamics-schemas/codeunit/GetEmployeeList\" />\r\n  </soap:Body>\r\n</soap:Envelope>",
+                  "options": {
+                    "raw": {
+                      "language": "xml"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7047/BC/WS/CRONUS%20International%20Ltd./Codeunit/GetEmployeeList",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7047",
+                  "path": [
+                    "BC",
+                    "WS",
+                    "CRONUS%20International%20Ltd.",
+                    "Codeunit",
+                    "GetEmployeeList"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "c8701764-37bb-4185-a3fb-668cc2d836c6"
+        },
+        {
+          "name": "OData",
+          "item": [
+            {
+              "name": "GetEmployeeList",
+              "id": "fade43d5-9723-4cbb-a907-420a43268023",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://bc26demo:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.')/EmployeePage(101)",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7048",
+                  "path": [
+                    "BC",
+                    "ODataV4",
+                    "Company('CRONUS%20International%20Ltd.')",
+                    "EmployeePage(101)"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PostEmployeeList",
+              "id": "9a6353c2-dca7-4837-98b4-b5b03e22d9c3",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"EmployeeId\": 101,\r\n    \"EmployeeName\": \"Tulsidas\",\r\n    \"EmployeeAge\": 20,\r\n    \"EmployeeeAccountTypeOption\": \"Full-Time\",\r\n    \"EmployeeeAccountTypeEnum\": \"FullTime\",\r\n    \"EmployeeIdValue\": \"\",\r\n    \"BasicSalary\": 60\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.')/EmployeePage",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7048",
+                  "path": [
+                    "BC",
+                    "ODataV4",
+                    "Company('CRONUS%20International%20Ltd.')",
+                    "EmployeePage"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PatchEmployee",
+              "id": "7d1bf6f2-d5ee-4d88-b7e9-84d0a18a1dd8",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "If-Match",
+                    "value": "W/\"JzIwOzE2MDk5MzA5OTY4MTY2OTE2MDgxMTswMDsn\"",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    //\"@odata.etag\": \"W/\\\"JzIwOzExMDQyNDQwMDIzMTIxMTYzNTYyMTswMDsn\\\"\",\r\n    \"EmployeeName\": \"suresh\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.')/EmployeePage(10)",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7048",
+                  "path": [
+                    "BC",
+                    "ODataV4",
+                    "Company('CRONUS%20International%20Ltd.')",
+                    "EmployeePage(10)"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PatchEmployee Copy",
+              "id": "4cad482e-260b-4665-b0f0-87b1db3931ec",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json",
+                    "type": "text"
+                  },
+                  {
+                    "key": "If-Match",
+                    "value": "W/\"JzIwOzE2MDk5MzA5OTY4MTY2OTE2MDgxMTswMDsn\"",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"EmployeeId\": 101,\r\n    \"EmployeeName\": \"Tulsidas\",\r\n    \"EmployeeAge\": 20,\r\n    \"EmployeeeAccountTypeOption\": \"Full-Time\",\r\n    \"EmployeeeAccountTypeEnum\": \"FullTime\",\r\n    \"EmployeeIdValue\": \"\",\r\n    \"BasicSalary\": 60\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.')/EmployeePage(10)",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7048",
+                  "path": [
+                    "BC",
+                    "ODataV4",
+                    "Company('CRONUS%20International%20Ltd.')",
+                    "EmployeePage(10)"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DeleteEmployee",
+              "id": "a74ea33f-45d1-4d6e-8f40-64ff9ee6db13",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "http://bc26demo:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.')/EmployeePage(10)",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7048",
+                  "path": [
+                    "BC",
+                    "ODataV4",
+                    "Company('CRONUS%20International%20Ltd.')",
+                    "EmployeePage(10)"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "66b7177d-e22e-4a3e-bda3-e8c280621530"
+        },
+        {
+          "name": "REST",
+          "item": [
+            {
+              "name": "GetEmployeeList",
+              "id": "5cfaa135-4495-460b-91cd-0a3d2bf48b41",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "{{password}}",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "{{username}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://bc26demo:7048/BC/api/Tulasidas/ZeroToHero/v2.0/Employees",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7048",
+                  "path": [
+                    "BC",
+                    "api",
+                    "Tulasidas",
+                    "ZeroToHero",
+                    "v2.0",
+                    "Employees"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PostEmployee",
+              "id": "4c0063b8-6167-4837-8a49-c15c815880fa",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n            \"EmployeeId\": 21,\r\n            \"EmployeeName\": \"Ramesh\",\r\n            \"EmployeeAge\": 30,\r\n            \"EmployeeeAccountTypeOption\": \"Full-Time\",\r\n            \"EmployeeeAccountTypeEnum\": \"FullTime\",\r\n            \"EmployeeIdValue\": \"\",\r\n            \"BasicSalary\": 20\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7048/BC/api/Tulasidas/ZeroToHero/v2.0/Employees",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7048",
+                  "path": [
+                    "BC",
+                    "api",
+                    "Tulasidas",
+                    "ZeroToHero",
+                    "v2.0",
+                    "Employees"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "DeleteEmployee",
+              "id": "e15f78a2-e062-432b-af83-96dd09782e9e",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "Tulasidas@007",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "admin",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7048/BC/api/Tulasidas/ZeroToHero/v2.0/Employees(20)",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7048",
+                  "path": [
+                    "BC",
+                    "api",
+                    "Tulasidas",
+                    "ZeroToHero",
+                    "v2.0",
+                    "Employees(20)"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ],
+          "id": "006f6216-4a09-4109-ac5e-deeff4e99e1d"
+        }
+      ],
+      "id": "22e8100a-7847-41b8-b00e-ac33c67af863"
+    },
+    {
+      "name": "ConsumeWebServices",
+      "item": [
+        {
+          "name": "GetEmployeeRegistratons",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "b4bc1b14-4421-4b8c-9bc1-8973ba160f61",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "id": "1ac09c5a-0896-4264-8424-8aa334b0c275",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/GetEmployeeRegistrations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "GetEmployeeRegistrations"
+              ]
+            },
+            "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+          },
+          "response": []
+        },
+        {
+          "name": "GetEmployeeRegistratons Copy",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ]
+              }
+            }
+          ],
+          "id": "3a50a6ac-5ffc-4a0e-9961-ed4b9f3b3abc",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": ""
+            },
+            "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+          },
+          "response": []
+        },
+        {
+          "name": "PostEmployeeRegistrations",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "92d05ebe-c9f5-4573-a6d2-206253215164",
+                "exec": [
+                  "pm.test(\"Successful POST request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "id": "151ac441-5088-4e35-8db7-eaa50813ef5a",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  EmployeeRegistrationNumber: 20,\n  EmployeeRegistrationStatus: \"Draft\",\n  EmployeeName: \"Cristiano\",\n  EmployeeAge: 40,\n  EmployeGender: \"Male\",\n  LineNumber: 1,\n  RegistrationDepartment: \"ECE\",\n  SalaryExpectations: 10000,\n  DesignationName: \"Associate Professor\",\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/PostEmployeeRegistrations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "PostEmployeeRegistrations"
+              ]
+            },
+            "description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+          },
+          "response": []
+        }
+      ],
+      "id": "fbb0f1a5-5a92-40f8-854b-319b75673f5d"
+    }
+  ]
+}
