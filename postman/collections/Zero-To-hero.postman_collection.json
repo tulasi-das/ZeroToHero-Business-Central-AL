@@ -1066,42 +1066,27 @@
           "response": []
         },
         {
-          "name": "GetEmployeeRegistratons Copy",
-          "event": [
-            {
-              "listen": "test",
-              "script": {
-                "type": "text/javascript",
-                "exec": [
-                  "pm.test(\"Status code is 200\", function () {",
-                  "    pm.response.to.have.status(200);",
-                  "});"
-                ]
-              }
-            }
-          ],
-          "id": "3a50a6ac-5ffc-4a0e-9961-ed4b9f3b3abc",
-          "request": {
-            "method": "GET",
-            "header": [],
-            "url": {
-              "raw": ""
-            },
-            "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
-          },
-          "response": []
-        },
-        {
           "name": "PostEmployeeRegistrations",
           "event": [
             {
               "listen": "test",
               "script": {
-                "id": "92d05ebe-c9f5-4573-a6d2-206253215164",
+                "id": "e5a3ef4d-33dc-4eda-8d68-1388be052d8b",
                 "exec": [
-                  "pm.test(\"Successful POST request\", function () {",
-                  "    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
-                  "});",
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});"
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "26d52e84-6713-44fc-be51-244d67f087a6",
+                "exec": [
                   ""
                 ],
                 "type": "text/javascript",
@@ -1110,13 +1095,13 @@
               }
             }
           ],
-          "id": "151ac441-5088-4e35-8db7-eaa50813ef5a",
+          "id": "3a50a6ac-5ffc-4a0e-9961-ed4b9f3b3abc",
           "request": {
             "method": "POST",
             "header": [],
             "body": {
               "mode": "raw",
-              "raw": "{\n  EmployeeRegistrationNumber: 20,\n  EmployeeRegistrationStatus: \"Draft\",\n  EmployeeName: \"Cristiano\",\n  EmployeeAge: 40,\n  EmployeGender: \"Male\",\n  LineNumber: 1,\n  RegistrationDepartment: \"ECE\",\n  SalaryExpectations: 10000,\n  DesignationName: \"Associate Professor\",\n}",
+              "raw": "{\r\n    \"EmployeeRegistrationNumber\": 20,\r\n    \"EmployeeRegistrationStatus\": \"Draft\",\r\n    \"EmployeeName\": \"Cristiano\",\r\n    \"EmployeeAge\": 40,\r\n    \"EmployeGender\": \"Male\",\r\n    \"LineNumber\": 1,\r\n    \"RegistrationDepartment\": \"ECE\",\r\n    \"SalaryExpectations\": 10000,\r\n    \"DesignationName\": \"Associate Professor\",\r\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1132,6 +1117,183 @@
               "port": "3000",
               "path": [
                 "PostEmployeeRegistrations"
+              ]
+            },
+            "description": "This is a GET request and it is used to \"get\" data from an endpoint. There is no request body for a GET request, but you can use query parameters to help specify the resource you want data on (e.g., in this request, we have `id=1`).\n\nA successful GET response will have a `200 OK` status, and should include some kind of response body - for example, HTML web content or JSON data."
+          },
+          "response": []
+        },
+        {
+          "name": "PutEmployeeRegistrations",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "92d05ebe-c9f5-4573-a6d2-206253215164",
+                "exec": [
+                  "pm.test(\"Successful POST request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "d9a6c297-ef4f-4376-9acd-842c73cb7ec2",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "id": "151ac441-5088-4e35-8db7-eaa50813ef5a",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"EmployeeRegistrationNumber\": 20,\n    \"EmployeeRegistrationStatus\": \"Draft\",\n    \"EmployeeName\": \"Cristiano\",\n    \"EmployeeAge\": 40,\n    \"EmployeGender\": \"Male\",\n    \"LineNumber\": 1,\n    \"RegistrationDepartment\": \"ECE\",\n    \"SalaryExpectations\": 10000,\n    \"DesignationName\": \"Associate Professor\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/PutEmployeeRegistrations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "PutEmployeeRegistrations"
+              ]
+            },
+            "description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+          },
+          "response": []
+        },
+        {
+          "name": "PatchEmployeeRegistrations",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "92d05ebe-c9f5-4573-a6d2-206253215164",
+                "exec": [
+                  "pm.test(\"Successful POST request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "d9a6c297-ef4f-4376-9acd-842c73cb7ec2",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "id": "080c6214-5548-4a20-8f29-b7be36320146",
+          "request": {
+            "method": "PATCH",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"EmployeeRegistrationNumber\": 20\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/PatchEmployeeRegistrations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "PatchEmployeeRegistrations"
+              ]
+            },
+            "description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
+          },
+          "response": []
+        },
+        {
+          "name": "DeleteEmployeeRegistrations",
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "92d05ebe-c9f5-4573-a6d2-206253215164",
+                "exec": [
+                  "pm.test(\"Successful POST request\", function () {",
+                  "    pm.expect(pm.response.code).to.be.oneOf([200, 201]);",
+                  "});",
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            },
+            {
+              "listen": "prerequest",
+              "script": {
+                "id": "d9a6c297-ef4f-4376-9acd-842c73cb7ec2",
+                "exec": [
+                  ""
+                ],
+                "type": "text/javascript",
+                "packages": {},
+                "requests": {}
+              }
+            }
+          ],
+          "id": "65a089d3-75f7-49de-8222-bbc986a815fc",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"EmployeeRegistrationNumber\": 20\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "http://localhost:3000/DeleteEmployeeRegistrations",
+              "protocol": "http",
+              "host": [
+                "localhost"
+              ],
+              "port": "3000",
+              "path": [
+                "DeleteEmployeeRegistrations"
               ]
             },
             "description": "This is a POST request, submitting data to an API via the request body. This request submits JSON data, and the data is reflected in the response.\n\nA successful POST request typically returns a `200 OK` or `201 Created` response code."
