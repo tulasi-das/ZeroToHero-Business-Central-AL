@@ -21,12 +21,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -76,7 +76,8 @@
                   "query": [
                     {
                       "key": "wsdl",
-                      "value": null
+                      "value": null,
+                      "uuid": "0908d8aa-6cef-4c3d-9ddc-85eff152611f"
                     }
                   ]
                 }
@@ -92,12 +93,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -147,7 +148,8 @@
                   "query": [
                     {
                       "key": "wsdl",
-                      "value": null
+                      "value": null,
+                      "uuid": "6fdd04e5-131e-4514-85d8-19f4edd3339f"
                     }
                   ]
                 }
@@ -163,12 +165,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -218,7 +220,8 @@
                   "query": [
                     {
                       "key": "wsdl",
-                      "value": null
+                      "value": null,
+                      "uuid": "03f2dc27-d256-471c-88ad-c755380130d5"
                     }
                   ]
                 }
@@ -234,12 +237,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -289,7 +292,8 @@
                   "query": [
                     {
                       "key": "wsdl",
-                      "value": null
+                      "value": null,
+                      "uuid": "2790fa50-bcfa-45dc-b9cd-56569a662f1f"
                     }
                   ]
                 }
@@ -305,12 +309,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -360,7 +364,8 @@
                   "query": [
                     {
                       "key": "wsdl",
-                      "value": null
+                      "value": null,
+                      "uuid": "46e35fb2-88dc-410e-a36c-33755eb20510"
                     }
                   ]
                 }
@@ -376,12 +381,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -431,7 +436,8 @@
                   "query": [
                     {
                       "key": "wsdl",
-                      "value": null
+                      "value": null,
+                      "uuid": "dd913ce7-adb1-4d4d-9cbf-cc8365e1f3a6"
                     }
                   ]
                 }
@@ -447,12 +453,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -518,12 +524,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -556,12 +562,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -603,12 +609,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -636,7 +642,7 @@
                   }
                 },
                 "url": {
-                  "raw": "http://bc26demo:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.')/EmployeePage(10)",
+                  "raw": "http://bc26demo:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.')/EmployeePage(21)",
                   "protocol": "http",
                   "host": [
                     "bc26demo"
@@ -646,14 +652,14 @@
                     "BC",
                     "ODataV4",
                     "Company('CRONUS%20International%20Ltd.')",
-                    "EmployeePage(10)"
+                    "EmployeePage(21)"
                   ]
                 }
               },
               "response": []
             },
             {
-              "name": "PatchEmployee Copy",
+              "name": "PutEmployee",
               "id": "4cad482e-260b-4665-b0f0-87b1db3931ec",
               "request": {
                 "auth": {
@@ -661,12 +667,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -719,12 +725,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -803,12 +809,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -852,12 +858,12 @@
                   "basic": [
                     {
                       "key": "password",
-                      "value": "Tulasidas@007",
+                      "value": "{{password}}",
                       "type": "string"
                     },
                     {
                       "key": "username",
-                      "value": "admin",
+                      "value": "{{username}}",
                       "type": "string"
                     }
                   ]
@@ -887,6 +893,118 @@
                     "ZeroToHero",
                     "v2.0",
                     "Employees(20)"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PutEmployee",
+              "id": "d9508bce-70e2-43d3-bd71-aba03cd5307d",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "{{password}}",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "{{username}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "If-Match",
+                    "value": "W/\"JzIwOzE3MjEzOTI3NDg4NzY2ODc3NTE4MTswMDsn\"",
+                    "type": "text",
+                    "uuid": "f5cd65bd-7a82-494c-a1b2-eef92c117959"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"EmployeeId\": 21,\r\n    \"EmployeeName\": \"Naveen\",\r\n    \"EmployeeAge\": 30,\r\n    \"EmployeeeAccountTypeOption\": \"Full-Time\",\r\n    \"EmployeeeAccountTypeEnum\": \"FullTime\",\r\n    \"EmployeeIdValue\": \"\",\r\n    \"BasicSalary\": 20\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7048/BC/api/Tulasidas/ZeroToHero/v2.0/Employees(21)",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7048",
+                  "path": [
+                    "BC",
+                    "api",
+                    "Tulasidas",
+                    "ZeroToHero",
+                    "v2.0",
+                    "Employees(21)"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "PatchEmployee",
+              "id": "cfdd3029-ac76-4f50-8241-ab02ab5339b5",
+              "request": {
+                "auth": {
+                  "type": "basic",
+                  "basic": [
+                    {
+                      "key": "password",
+                      "value": "{{password}}",
+                      "type": "string"
+                    },
+                    {
+                      "key": "username",
+                      "value": "{{username}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PATCH",
+                "header": [
+                  {
+                    "key": "If-Match",
+                    "value": "W/\"JzIwOzE3MjEzOTI3NDg4NzY2ODc3NTE4MTswMDsn\"",
+                    "type": "text",
+                    "uuid": "3ab018f2-a111-4de5-b024-29a3635b394c"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"EmployeeName\" : \"Mohan\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://bc26demo:7048/BC/api/Tulasidas/ZeroToHero/v2.0/Employees(21)",
+                  "protocol": "http",
+                  "host": [
+                    "bc26demo"
+                  ],
+                  "port": "7048",
+                  "path": [
+                    "BC",
+                    "api",
+                    "Tulasidas",
+                    "ZeroToHero",
+                    "v2.0",
+                    "Employees(21)"
                   ]
                 }
               },
