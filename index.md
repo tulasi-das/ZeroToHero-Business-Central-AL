@@ -149,6 +149,31 @@ If this course is helping you, please consider subscribing to support more free 
 <iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/VYX_0v8inMI" title="Class 23" frameborder="0" allowfullscreen></iframe>
 </details>
 
+<details>
+<summary><a href="https://youtu.be/w0fctV0Btb0">29. [Zero To Hero]: Mastering Code Cops in Business Central AL</a></summary>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/w0fctV0Btb0" title="Class 29" frameborder="0" allowfullscreen></iframe>
+</details>
+
+<details>
+<summary><a href="https://youtu.be/yOQ60wUt9Ss">30. [Zero To Hero]: How to embed Part pages into Main pages using SubpageLink in Business Central AL</a></summary>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/yOQ60wUt9Ss" title="Class 30" frameborder="0" allowfullscreen></iframe>
+</details>
+
+<details>
+<summary><a href="https://youtu.be/5S9Xm2zPF5s">31. [Zero To Hero]: Master Flow Fields in Business Central AL</a></summary>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/5S9Xm2zPF5s" title="Class 31" frameborder="0" allowfullscreen></iframe>
+</details>
+
+<details>
+<summary><a href="https://youtu.be/kbGmNQdScIc">32. [Zero To Hero]: Master Try Functions in Business Central AL | Error Handling #1</a></summary>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/kbGmNQdScIc" title="Class 32" frameborder="0" allowfullscreen></iframe>
+</details>
+
+<details>
+<summary><a href="https://youtu.be/BKstF_YAb9A">33. [Zero To Hero]: ErrorInfo for beginners in Business Central AL</a></summary>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/BKstF_YAb9A" title="Class 33" frameborder="0" allowfullscreen></iframe>
+</details>
+
 </details>
 
 <details markdown="1">
