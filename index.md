@@ -175,8 +175,8 @@ If this course is helping you, please consider subscribing to support more free 
 </details>
 
 <details>
-<summary><a href="https://youtu.be/MBPI6pZwLtk">34. [Zero To Hero]: Assignment #1 for Business Central Course</a></summary>
-<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/MBPI6pZwLtk" title="Class 34" frameborder="0" allowfullscreen></iframe>
+<summary><a href="https://youtu.be/Ql3oK-2ltbk">34. [Zero To Hero]: Master Collectible Errors in Business Central AL in Just 14 mins</a></summary>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/Ql3oK-2ltbk" title="Class 34" frameborder="0" allowfullscreen></iframe>
 </details>
 
 <details>
@@ -185,8 +185,8 @@ If this course is helping you, please consider subscribing to support more free 
 </details>
 
 <details>
-<summary><a href="https://youtu.be/Ql3oK-2ltbk">36. [Zero To Hero]: Master Collectible Errors in Business Central AL in Just 14 mins</a></summary>
-<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/Ql3oK-2ltbk" title="Class 36" frameborder="0" allowfullscreen></iframe>
+<summary><a href="https://youtu.be/MBPI6pZwLtk">36. [Zero To Hero]: Assignment #1 for Business Central Course</a></summary>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/MBPI6pZwLtk" title="Class 36" frameborder="0" allowfullscreen></iframe>
 </details>
 
 </details>
