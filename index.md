@@ -189,6 +189,11 @@ If this course is helping you, please consider subscribing to support more free 
 <iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/MBPI6pZwLtk" title="Class 36" frameborder="0" allowfullscreen></iframe>
 </details>
 
+<details>
+<summary><a href="https://youtu.be/UnFYQMgw4oU?si=n0tQLtpwbdAnePOY">37. [Zero To Hero]: Web Services in Business Central Explained in simple terms 🤯 </a></summary>
+<iframe width="100%" height="480" src="https://www.youtube-nocookie.com/embed/UnFYQMgw4oU" title="Class 37" frameborder="0" allowfullscreen></iframe>
+</details>
+
 </details>
 
 <details markdown="1">
