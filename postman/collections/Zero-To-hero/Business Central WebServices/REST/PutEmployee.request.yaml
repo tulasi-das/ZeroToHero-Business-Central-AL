@@ -1,0 +1,30 @@
+$kind: http-request
+url: http://bc26demo:7048/BC/api/Tulasidas/ZeroToHero/v2.0/Employees(21)
+method: PUT
+headers:
+  If-Match: W/"JzIwOzE3MjEzOTI3NDg4NzY2ODc3NTE4MTswMDsn"
+body:
+  type: json
+  content: "{\r
+
+    \    \"EmployeeId\": 21,\r
+
+    \    \"EmployeeName\": \"Naveen\",\r
+
+    \    \"EmployeeAge\": 30,\r
+
+    \    \"EmployeeeAccountTypeOption\": \"Full-Time\",\r
+
+    \    \"EmployeeeAccountTypeEnum\": \"FullTime\",\r
+
+    \    \"EmployeeIdValue\": \"\",\r
+
+    \    \"BasicSalary\": 20\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: "{{username}}"
+    password: "{{password}}"
+order: 4000

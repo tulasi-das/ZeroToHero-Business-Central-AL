@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://bc26demo:7048/BC/api/Tulasidas/ZeroToHero/v2.0/Employees(20)
+method: DELETE
+body:
+  type: json
+  content: ""
+auth:
+  type: basic
+  credentials:
+    username: "{{username}}"
+    password: "{{password}}"
+order: 3000

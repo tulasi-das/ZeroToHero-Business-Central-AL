@@ -1,0 +1,10 @@
+name: LocalEnvironment
+values:
+  - key: servername
+    value: ''
+  - key: port
+    value: ''
+  - key: username
+    value: ''
+  - key: password
+    value: ''

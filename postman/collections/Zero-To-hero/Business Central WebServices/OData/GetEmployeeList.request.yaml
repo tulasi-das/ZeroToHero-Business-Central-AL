@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://bc26demo:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.')/EmployeePage(101)
+method: GET
+auth:
+  type: basic
+  credentials:
+    username: "{{username}}"
+    password: "{{password}}"
+order: 1000

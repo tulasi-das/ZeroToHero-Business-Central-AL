@@ -1,0 +1,9 @@
+$kind: http-request
+url: http://bc26demo:7048/BC/api/Tulasidas/ZeroToHero/v2.0/Employees
+method: GET
+auth:
+  type: basic
+  credentials:
+    username: "{{username}}"
+    password: "{{password}}"
+order: 1000

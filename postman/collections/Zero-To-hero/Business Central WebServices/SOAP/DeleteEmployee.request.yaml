@@ -1,0 +1,40 @@
+$kind: http-request
+url: http://bc26demo:7047/BC/WS/CRONUS%20International%20Ltd./Page/EmployeePage?wsdl
+method: POST
+headers:
+  - key: Content-Type
+    value: text/xml; charset=utf-8
+  - key: SOAPAction
+    value: '"urn:microsoft-dynamics-schemas/page/employeepage"'
+  - key: ""
+    value: ""
+    disabled: true
+queryParams:
+  wsdl: null
+body:
+  type: xml
+  content: "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r
+
+    <soap:Envelope xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\"\r
+
+    \               xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"\r
+
+    \               xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\">\r
+
+    \  <soap:Body>\r
+
+    \    <Delete xmlns=\"urn:microsoft-dynamics-schemas/page/employeepage\">\r
+
+    \      <Key>12;tMMAAACHUA==6;3167870;</Key>\r
+
+    \    </Delete>\r
+
+    \  </soap:Body>\r
+
+    </soap:Envelope>"
+auth:
+  type: basic
+  credentials:
+    username: "{{username}}"
+    password: "{{password}}"
+order: 6000

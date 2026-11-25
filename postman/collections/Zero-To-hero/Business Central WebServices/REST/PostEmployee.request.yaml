@@ -1,0 +1,28 @@
+$kind: http-request
+url: http://bc26demo:7048/BC/api/Tulasidas/ZeroToHero/v2.0/Employees
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \            \"EmployeeId\": 21,\r
+
+    \            \"EmployeeName\": \"Ramesh\",\r
+
+    \            \"EmployeeAge\": 30,\r
+
+    \            \"EmployeeeAccountTypeOption\": \"Full-Time\",\r
+
+    \            \"EmployeeeAccountTypeEnum\": \"FullTime\",\r
+
+    \            \"EmployeeIdValue\": \"\",\r
+
+    \            \"BasicSalary\": 20\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: "{{username}}"
+    password: "{{password}}"
+order: 2000

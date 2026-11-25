@@ -1,0 +1,18 @@
+$kind: http-request
+url: http://bc26demo:7048/BC/api/Tulasidas/ZeroToHero/v2.0/Employees(21)
+method: PATCH
+headers:
+  If-Match: W/"JzIwOzE3MjEzOTI3NDg4NzY2ODc3NTE4MTswMDsn"
+body:
+  type: json
+  content: "{\r
+
+    \    \"EmployeeName\" : \"Mohan\"\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: "{{username}}"
+    password: "{{password}}"
+order: 5000

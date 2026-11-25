@@ -1,0 +1,28 @@
+$kind: http-request
+url: http://bc26demo:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.')/EmployeePage
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"EmployeeId\": 101,\r
+
+    \    \"EmployeeName\": \"Tulsidas\",\r
+
+    \    \"EmployeeAge\": 20,\r
+
+    \    \"EmployeeeAccountTypeOption\": \"Full-Time\",\r
+
+    \    \"EmployeeeAccountTypeEnum\": \"FullTime\",\r
+
+    \    \"EmployeeIdValue\": \"\",\r
+
+    \    \"BasicSalary\": 60\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: "{{username}}"
+    password: "{{password}}"
+order: 2000

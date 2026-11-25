@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://bc26demo:7048/BC/ODataV4/Company('CRONUS%20International%20Ltd.')/EmployeePage(21)
+method: PATCH
+headers:
+  Content-Type: application/json
+  If-Match: W/"JzIwOzE2MDk5MzA5OTY4MTY2OTE2MDgxMTswMDsn"
+body:
+  type: json
+  content: "{\r
+
+    \    //\"@odata.etag\": \"W/\\\"JzIwOzExMDQyNDQwMDIzMTIxMTYzNTYyMTswMDsn\\\"\",\r
+
+    \    \"EmployeeName\": \"suresh\"\r
+
+    }"
+auth:
+  type: basic
+  credentials:
+    username: "{{username}}"
+    password: "{{password}}"
+order: 3000
