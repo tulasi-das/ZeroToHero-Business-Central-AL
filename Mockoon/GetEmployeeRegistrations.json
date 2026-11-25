@@ -1,0 +1,12 @@
+﻿{
+  "EmployeeRegistrationNumber": 20,
+  "EmployeeRegistrationStatus": "Draft",
+  "EmployeeName": "Cristiano",
+  "EmployeeAge": 40,
+  "EmployeeGender": "Male",
+  "LineNumber": 1,
+  "RegistrationDepartment": "ECE",
+  "SalaryExpectations": 10000,
+  "DesignationName": "Associate Professor"
+}
+
